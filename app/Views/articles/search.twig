@@ -1,0 +1,55 @@
+{% include 'Partials/head.twig' %}
+{% include 'Partials/navbar.twig' %}
+{% include 'Partials/header.twig' %}
+
+<section>
+    <div class="articles">
+        <div class="row">
+            {% for article in articlesBySearch %}
+            <div class="article">
+                <table class="article-table">
+                    <tr>
+                        <td><img src="{{ article.image }}" alt="{{ article.title }}" width="200" height="250" /></td>
+                    </tr>
+                    <tr>
+                        <th>{{ article.title }}</th>
+                    </tr>
+                    <tr>
+                        <td>{{ article.description }}</td>
+                    </tr>
+                </table>
+            </div>
+            {% if loop.index is divisible by(4) or loop.last %}
+        </div>
+        <div class="row">
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include 'Partials/footer.twig' %}
+
+{#    <table>#}
+{#        <tr>#}
+{#            <td>#}
+{#                <div class="navbar">#}
+{#                    <form action="/search" method="GET">#}
+{#                        <label for="search">Search:</label>#}
+{#                        <input type="text" id="topic" name="topic" placeholder="topic">#}
+{#                        <input type="submit" value="Search">#}
+{#                    </form>#}
+{#                </div>#}
+{#            </td>#}
+{#            <td>#}
+{#                <div class="navbar">#}
+{#                    <form action="/search" method="GET">#}
+{#                        <label for="search">Search:</label>#}
+{#                        <input type="text" id="country" name="country" placeholder="country">#}
+{#                        <input type="submit" value="Search">#}
+{#                    </form>#}
+{#                </div>#}
+{#            </td>#}
+{#        </tr>#}
+
+{#    </table>#}

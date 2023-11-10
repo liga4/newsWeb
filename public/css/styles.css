@@ -1,0 +1,51 @@
+.article-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #000;
+}
+nav a {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+nav div {
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+}
+
+.article-table td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+div.articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+body {
+    font-family: "Twemoji Country Flags", "Helvetica", "Comic Sans", serif;}

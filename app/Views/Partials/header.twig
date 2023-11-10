@@ -1,0 +1,12 @@
+<header>
+    <h1>{{ header }}</h1>
+</header>
+<section>
+    <form action="/search" method="GET" id="searchForm">
+        <label for="topic"></label><input type="text" id="topic" placeholder="topic">
+        <label for="from"></label><input type="date" id="from" placeholder="YYYY-MM-DD">
+        <label for="to"></label><input type="date" id="to" placeholder="YYYY-MM-DD" min="{{ month.format('Y-m-d') }}">
+        <label for="country"></label><input type="text" id="country" placeholder="country">
+        <input type="submit" value="Search">
+    </form>
+</section>
