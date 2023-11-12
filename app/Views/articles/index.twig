@@ -9,13 +9,17 @@
             <div class="article">
                 <table class="article-table">
                     <tr>
-                        <td><img src="{{ article.image }}" alt="{{ article.title }}" width="200" height="250" /></td>
+                        <td><img src="{{ article.image }}" alt="{{ article.title }}" width="250" height="300"/></td>
                     </tr>
                     <tr>
-                        <th>{{ article.title }}</th>
+                        <th>
+                            <a href="{{ article.url }}">
+                                <div>{{ article.title }}</div>
+                            </a>
+                        </th>
                     </tr>
                     <tr>
-                        <td>{{ article.description }}</td>
+                        <td>{{ article.publishedAt }}</td>
                     </tr>
                 </table>
             </div>

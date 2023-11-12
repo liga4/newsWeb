@@ -3,10 +3,19 @@
 </header>
 <section>
     <form action="/search" method="GET" id="searchForm">
-        <label for="topic"></label><input type="text" id="topic" placeholder="topic">
-        <label for="from"></label><input type="date" id="from" placeholder="YYYY-MM-DD">
-        <label for="to"></label><input type="date" id="to" placeholder="YYYY-MM-DD" min="{{ month.format('Y-m-d') }}">
-        <label for="country"></label><input type="text" id="country" placeholder="country">
+        <label for="topic"></label><input type="text" id="topic" name="topic" placeholder="topic">
+        <label for="from"></label><input type="date" id="from" name="from" placeholder="YYYY-MM-DD"
+                                         min="{{ month.format('Y-m-d') }}">
+        <label for="to"></label><input type="date" id="to" name="to" placeholder="YYYY-MM-DD"
+                                       min="{{ month.format('Y-m-d') }}">
         <input type="submit" value="Search">
+    </form>
+    <form action="" method="GET">
+        <button class="flag-button" name="country" value="lv"><img src="{{ imagelv }}" alt="Lv flag" width="20"
+                                                                   height="20"></button>
+        <button class="flag-button" name="country" value="us"><img src="{{ imageus }}" alt="Us flag" width="20"
+                                                                   height="20"></button>
+        <button class="flag-button" name="country" value="gb"><img src="{{ imageuk }}" alt="Gb flag" width="20"
+                                                                   height="20"></button>
     </form>
 </section>

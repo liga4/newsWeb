@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88278bd54ec790428bba989ecd6f3424",
+    "content-hash": "2c4c96236c707d8a27b72cc6e9b693b2",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -1520,6 +1520,47 @@
                 }
             ],
             "time": "2022-10-16T01:01:54+00:00"
+        },
+        {
+            "name": "xtomdex/country-flags",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xtomdex/country-flags.git",
+                "reference": "2217e5e7a8fef42de80d017df2ce5080f2b5cec6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xtomdex/country-flags/zipball/2217e5e7a8fef42de80d017df2ce5080f2b5cec6",
+                "reference": "2217e5e7a8fef42de80d017df2ce5080f2b5cec6",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "xtomdex\\countryflags\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "xtomdex",
+                    "email": "sharonovde@gmail.com"
+                }
+            ],
+            "description": "Class for getting country flag image URL",
+            "keywords": [
+                "countryflags",
+                "icons"
+            ],
+            "support": {
+                "issues": "https://github.com/xtomdex/country-flags/issues",
+                "source": "https://github.com/xtomdex/country-flags/tree/master"
+            },
+            "time": "2019-11-03T18:43:27+00:00"
         }
     ],
     "packages-dev": [],

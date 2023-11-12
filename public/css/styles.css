@@ -2,11 +2,22 @@
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #000;
+    justify-content: center;
 }
+
+td {
+    text-align: center;
+    font-size: 12px
+}
+
+.navbar {
+    color: black;
+}
+
 nav a {
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 nav div {
@@ -14,9 +25,6 @@ nav div {
     align-items: center;
 }
 
-nav li {
-    list-style: none;
-}
 
 nav a {
     color: white;
@@ -47,5 +55,118 @@ div.articles {
     margin-right: 5px;
     margin-bottom: 20px;
 }
+
 body {
-    font-family: "Twemoji Country Flags", "Helvetica", "Comic Sans", serif;}
+    font-family: "Twemoji Country Flags", "Helvetica", "Comic Sans", serif;
+}
+
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: cadetblue;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: blue;
+    background-color: cadetblue;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    background-color: cadetblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button, input[type="submit"] {
+    background-color: darkcyan;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #555;
+}
+
+input[type="text"], input[type="date"], input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 23%;
+    box-sizing: border-box;
+}
